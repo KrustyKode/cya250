@@ -1,0 +1,80 @@
+<!--
+# Name:                         3.10.html
+# Author:                       Michael Sineiro
+# Date of latest revision:      2/6/25
+# Purpose:                      using HTML and basic CSS to show the world how
+                                to join this social network!
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Join a social network</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <h1>Join a social network</h1>
+   
+   <form action="https://wp.zybooks.com/form-viewer.php" 
+         method="POST" 
+         enctype="multipart/form-data">
+      
+      <!-- Grouping form fields in a fieldset  -->
+      <fieldset>
+         <legend>Your details</legend>
+         
+         <div>
+            <label for="fullName">Full name:</label>
+            <input 
+               type="text" 
+               id="fullName" 
+               name="fullName" 
+               placeholder="John Doe" 
+               required 
+               autocomplete="name"
+            >
+         </div>
+         
+         <div>
+            <label for="email">Email address:</label>
+            <!-- placeholders & autocomplete  -->
+            <input 
+               type="text" 
+               id="email" 
+               name="email" 
+               placeholder="name@example.com" 
+               required 
+               autocomplete="email"
+            >
+         </div>
+         
+         <div>
+            <label for="about">About you:</label>
+            <textarea 
+               id="about" 
+               name="about" 
+               rows="3" 
+               cols="50" 
+               placeholder="Tell us something about yourself..."
+            ></textarea>
+         </div>
+         
+         <div>
+            <label for="picture">Photo:</label>
+            <!-- accept="image/*" only image files should be chosen -->
+            <input 
+               type="file" 
+               id="picture" 
+               name="picture" 
+               accept="image/*"
+            >
+         </div>
+         
+         <div>
+            <input type="submit" value="Submit">
+         </div>
+      </fieldset>
+   </form>
+   
+</body>
+</html>
