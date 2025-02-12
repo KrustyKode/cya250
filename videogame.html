@@ -1,0 +1,84 @@
+<!--
+# Name:                         4.11.html
+# Author:                       Michael Sineiro
+# Date of latest revision:      2/12/25
+# Purpose:                      using HTML and basic CSS to show the world how
+                                to join this social network!
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Best-Selling Video Games</title>
+  <style>
+    /* defining variables for table color and background */
+    :root {
+      --table-color: #4CAF50;
+      --row-bg-color: #f2f2f2;
+    }
+
+    /* styles the table w/ centering, borders, size */
+    #game-table {
+      margin: 20px auto;
+      border: 2px solid var(--table-color);
+      border-collapse: collapse;
+      text-align: center;
+      width: 400px;
+      height: 200px;
+    }
+
+    /* changes the table header to uppercase, sets a green background, white text */
+    #game-table caption {
+      text-transform: uppercase;
+      background-color: var(--table-color);
+      color: #fff;
+      padding: 10px;
+    }
+
+    /* every even-numbered row's background color */
+    #game-table tr:nth-child(even) {
+      background-color: var(--row-bg-color);
+    }
+
+    /* padding to table headers and cells for looks */
+    #game-table th,
+    #game-table td {
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+  <table id="game-table">
+    <caption>Best-Selling Video Games</caption>
+    <tr>
+      <th>Title</th>
+      <th>Sales</th>
+      <th>Release Date</th>
+    </tr>
+    <tr>
+      <td>Minecraft</td>
+      <td>176,000,000</td>
+      <td>November 18, 2011</td>
+    </tr>
+    <tr>
+      <td>Tetris</td>
+      <td>170,000,000</td>
+      <td>June 6, 1984</td>
+    </tr>
+    <tr>
+      <td>Grand Theft Auto V</td>
+      <td>110,000,000</td>
+      <td>September 17, 2013</td>
+    </tr>
+    <tr>
+      <td>Wii Sports</td>
+      <td>82,870,000</td>
+      <td>November 19, 2006</td>
+    </tr>
+  </table>
+  <p>
+    Source: <a href="https://en.wikipedia.org/wiki/List_of_best-selling_video_games">Wikipedia</a>
+  </p>
+</body>
+</html>
