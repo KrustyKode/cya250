@@ -1,3 +1,15 @@
+/*
+# Name:                         pwCheck.mjs
+# Author:                       Michael Sineiro
+# Date of latest revision:      2/19/25
+# Purpose:                  using js to make a lil script
+#                           that verifies if a password meets certain criteria
+#                           (8 characters, no "password", at least one uppercase letter)
+#                           and returns true if it does, false otherwise.
+#
+#                           The script also includes additional arguments for testing.
+#
+*/
 function isStrongPassword(password) {
     // 1: Check length
     if (password.length < 8) {
