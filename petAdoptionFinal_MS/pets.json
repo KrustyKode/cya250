@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Mittens",
+    "age": "3 years",
+    "breed": "Domestic Shorthair",
+    "location": "Foster Home",
+    "description": "Mittens is a friendly and playful cat who loves attention.",
+    "image": "./images/cat-g00919587e_640.jpg"
+  },
+  {
+    "name": "Buddy",
+    "age": "3 years",
+    "breed": "Labrador Retriever",
+    "location": "Rescue Center",
+    "description": "Buddy is a loyal and energetic dog who enjoys long walks and playing fetch.",
+    "image": "./images/dog-gbc4b9952b_640.jpg"
+  },
+  {
+    "name": "Floppy",
+    "age": "1 year",
+    "breed": "Holland Lop",
+    "location": "Foster Home",
+    "description": "Floppy is a cute rabbit who loves snuggling and gentle company.",
+    "image": "./images/cat-g638c53e3f_640.jpg"
+  },
+  {
+    "name": "Whiskers",
+    "age": "2 years",
+    "breed": "Domestic Shorthair",
+    "location": "Animal Shelter",
+    "description": "Whiskers is a friendly and playful cat who enjoys exploring.",
+    "image": "./images/cat-g00919587e_640.jpg"
+  },
+  {
+    "name": "Charlie",
+    "age": "2 years",
+    "breed": "Labrador Retriever",
+    "location": "Animal Shelter",
+    "description": "Charlie is a friendly and energetic dog who loves playing fetch and going on walks.",
+    "image": "./images/dog-gbc4b9952b_640.jpg"
+  },
+  {
+    "name": "Thumper",
+    "age": "3 years",
+    "breed": "Holland Lop",
+    "location": "Rescue Center",
+    "description": "Thumper is an affectionate young rabbit who loves snuggling and exploring.",
+    "image": "./images/cat-g638c53e3f_640.jpg"
+  }
+]

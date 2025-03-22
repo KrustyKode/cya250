@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Adoption - Adopt a Pet</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <div class="logo">Pet Adoption</div>
+            <!-- Navigation links -->
+            <nav class="adoption-links">
+                <a href="index.html">HOME</a>
+                <a href="adoption.html">ADOPT</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="admin_dashboard.html">DASHBOARD</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="adoption-container">
+        <div class="adoption-content">
+            <section class="adopt-info">
+                <div class="image">
+                    <img src="./images/adopt-g5b6420f69_1280.png" alt="Illustration of a person holding a pet" />
+                </div>
+                <h2>About Pet Adoption</h2>
+                <p>Adopting a pet is a rewarding experience that brings joy and companionship to both the pet and the owner. When you adopt a pet, you give them a second chance.</p>
+                <h3>Why adopt a pet?</h3>
+                <ul>
+                    <li>Give a homeless pet a second chance at a loving home.</li>
+                    <li>Enjoy the unconditional love and companionship of a pet.</li>
+                    <li>Support shelters by reducing overcrowding and helping more animals.</li>
+                    <li>Save money—adoption is often more affordable than buying a pet.</li>
+                </ul>
+                <div class="image">
+                    <img src="./images/pets-gfdb720295_1280.png" alt="Illustration of multiple pets" />
+                </div>
+                <h3>Requirements for adoption</h3>
+                <ul>
+                    <li>Must be at least 18 years old.</li>
+                    <li>Provide a valid photo ID and proof of current address.</li>
+                    <li>If renting, have your landlord’s permission to adopt a pet.</li>
+                    <li>Be financially prepared to care for a pet’s needs.</li>
+                    <li>Agree to a home visit or interview if required by the shelter.</li>
+                </ul>
+            </section>
+
+            <section class="adopt-info">
+                <form class="adoption-form" method="POST" action="http://localhost:3000/submit-adoption">
+                    <div class="contact-form">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required />
+                    </div>
+                    <div class="contact-form">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required />
+                    </div>
+                    <div class="contact-form">
+                        <label for="message">About You:</label>
+                        <textarea id="message" name="message" placeholder="Tell us about yourself and why you want to adopt" required></textarea>
+                    </div>
+                    <!-- Hidden fields for status, reason, and statusChangeDate (set by the server) -->
+                    <input type="hidden" name="status" value="Initial Contact" />
+                    <input type="hidden" name="statusChangeDate" value="" />
+                    <input type="hidden" name="reason" value="" />
+                    <button type="submit">Submit Adoption Form</button>
+                </form>
+
+                <div class="expectations">
+                    <h3>Expectations for the First Year of Pet Adoption</h3>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, ad!</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, ad!</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, ad!</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, ad!</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, ad!</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, ad!</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Mike Sineiro</p>
+    </footer>
+</body>
+</html>

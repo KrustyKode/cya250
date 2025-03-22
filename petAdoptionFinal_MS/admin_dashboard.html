@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard - Pet Adoption</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <div class="logo">Pet Adoption</div>
+            <!-- Navigation links -->
+            <nav class="adoption-links">
+                <a href="index.html">HOME</a>
+                <a href="adoption.html">ADOPT</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="admin_dashboard.html">DASHBOARD</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="dashboard-container">
+        <!-- Pets Section -->
+        <section class="section">
+            <h2>Animals Available for Adoption</h2>
+            <table id="pets-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Pet Name</th>
+                        <th>Age</th>
+                        <th>Breed</th>
+                        <th>Location</th>
+                        <th>Description</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Filled dynamically from pets.json -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Adoption Inquiries Section -->
+        <section class="section">
+            <h2>Adoption Form Entries</h2>
+            <table id="adoption-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Message</th>
+                        <th>Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Filled dynamically from adoptionInquiry.json -->
+                </tbody>
+            </table>
+            <button id="add-adoption-btn">Add New Adoption Entry</button>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Mike Sineiro</p>
+    </footer>
+    <script src="./admin_dashboard.js"></script>
+</body>
+</html>
